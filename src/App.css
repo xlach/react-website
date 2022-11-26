@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.DateBar {
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #50586a;
+  opacity: 70%;
+}
+
+.DateText {
+  font-size: calc(10px + 2vmin);
+  float: left;
+  margin-left: 1%;
+  color: #fff;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.CodeText {
+  font-size: calc(10px + 2vmin);
+  float: right;
+  margin-right: 1%;
+  color: #fff;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.CenterText {
+  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+  justify-content: center;
+  width: 1100px;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
