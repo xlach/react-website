@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import GetSchedule from './components/getSchedule';
+import GetCode from './components/getCode';
 import GetDate from './components/getDate';
+import GetDay from './components/getDay';
+import GetSchedule from './components/getSchedule';
+import GetDateNum from './components/getDateNum';
 
 class App extends Component {
   constructor() {
@@ -18,13 +20,26 @@ class App extends Component {
         <div className="DateBar">
           <p>
             <div className="DateText"><GetDate /></div>
-            <div className="CodeText"><GetSchedule /></div>
+            <div className="CodeText">Code: <GetCode /></div>
             <div className='CenterText'>Dashboard</div>
           </p>
         </div>
+
+        <div className="scheduleBlock">
+          <span style={{ "float": "left", "display": "flex", "marginLeft": "12.5px", "marginTop": "5px", "fontSize": "12px" }}>
+            <GetDay />
+          </span>
+          <span style={{ "float": "right", "display": "flex", "marginRight": "15px", "marginTop": "5.5px", "fontSize": "35px" }}>
+            <GetCode />
+          </span>
+          <br></br>
+          <span style={{ "marginLeft": "10px", "display": "flex", "fontSize": "25px", "marginBottom": "4px" }}>
+            <GetDateNum />
+          </span>
+          <GetSchedule />
+          <hr></hr>
+        </div>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
         </div>
       </div>
     );

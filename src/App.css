@@ -70,9 +70,20 @@
 
 .CenterText {
   font-size: calc(10px + 2vmin);
-  margin: 0 auto;
+  margin-right: 19rem;
   justify-content: center;
-  width: 1100px;
+  text-align: center;
   color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.scheduleBlock {
+  background-color: #282c34;
+  position: absolute;
+  color: white;
+  left: 60px;
+  top: 128px;
+  width: 8rem;
+  outline: auto;
+  outline-color: #fff;
 }
