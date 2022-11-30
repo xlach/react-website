@@ -9,7 +9,7 @@ export default function GetSchedule() {
   const [scheduleList, initSchedule] = useState([]);
 
   const fetchData = async () => {
-    const response = await fetch(`https://bell.dev.harker.org/api/schedule?month=${month}&day=29&year=${year}`);
+    const response = await fetch(`https://bell.dev.harker.org/api/schedule?month=${month}&day=${day}&year=${year}`);
     if (!response.ok) {
       throw new Error('Data coud not be fetched!');
     } else {
@@ -33,29 +33,11 @@ export default function GetSchedule() {
           <span id={Math.random()}>{period}</span>
           <br></br>
           </>
-        )))
+        )));
         console.log(getsched);
-        // eslint-disable-next-line no-eval
         initSchedule(getsched);
       });
   }, []);
 
   return (scheduleList);
-
-  //console.log(scheduleList.code);
-
-
-  //console.log(scheduleList.schedule.indexOf(0));
-
-
-  /*for (let i = 0; i < 10; i++) {
-    ///console.log(scheduleList.schedule[i].name);
-    sched += `<hr></hr>
-    <span>${scheduleList.schedule[i].name}</span>
-    <br></br>
-    <span>8:00 - 9:25</span>
-    <br></br>`;
-  };*/
-
-  //console.log(sched);
 }

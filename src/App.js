@@ -4,7 +4,7 @@ import GetCode from './components/getCode';
 import GetDate from './components/getDate';
 import GetDay from './components/getDay';
 import GetSchedule from './components/getSchedule';
-import GetDateNum from './components/getDateNum';
+import GetVarient from './components/getVarient';
 
 class App extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class App extends Component {
         <div className="DateBar">
           <p>
             <div className="DateText"><GetDate /></div>
-            <div className="CodeText">Code: <GetCode /></div>
+            <div className="CodeText"><GetCode /> - <GetVarient /></div>
             <div className='CenterText'>Dashboard</div>
           </p>
         </div>
@@ -34,7 +34,7 @@ class App extends Component {
           </span>
           <br></br>
           <span style={{ "marginLeft": "10px", "display": "flex", "fontSize": "25px", "marginBottom": "4px" }}>
-            <GetDateNum />
+            {new Date().getDate()}
           </span>
           <GetSchedule />
           <hr></hr>
