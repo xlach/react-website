@@ -87,3 +87,12 @@
   outline: auto;
   outline-color: #fff;
 }
+
+hr {
+  margin: 0;
+}
+
+.period-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
