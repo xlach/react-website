@@ -28,11 +28,10 @@ export default function GetSchedule() {
         console.log(periods);
 
         const getsched = (periods.map(period => (
-          <>
-          <hr></hr>
-          <span id={Math.random()}>{period}</span>
-          <br></br>
-          </>
+          <div class="period-container">
+            <hr />
+            <span id={Math.random()}>{period}</span>
+          </div>
         )));
         console.log(getsched);
         initSchedule(getsched);
