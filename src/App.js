@@ -26,14 +26,14 @@ class App extends Component {
         </div>
 
         <div className="scheduleBlock">
-          <span style={{ "float": "left", "display": "flex", "marginLeft": "12.5px", "marginTop": "5px", "fontSize": "12px" }}>
+          <span style={{ "float": "left", "display": "flex", "marginLeft": "13px", "marginTop": "5px", "fontSize": "12px" }}>
             <GetDay />
           </span>
           <span style={{ "float": "right", "display": "flex", "marginRight": "15px", "marginTop": "5px", "fontSize": "35px" }}>
             <GetCode />
           </span>
           <br />
-          <span style={{ "marginLeft": "10px", "display": "flex", "fontSize": "25px", "marginBottom": "4px" }}>
+          <span style={{ "marginLeft": "13px", "display": "flex", "fontSize": "25px", "marginBottom": "4px" }}>
             {new Date().getDate()}
           </span>
           <GetSchedule />
